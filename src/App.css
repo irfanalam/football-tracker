@@ -1,0 +1,206 @@
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: darkgray;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 2px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#card_main {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 80px;
+}
+
+.card {
+  border-radius: 8px;
+  margin: 7px;
+  padding-right: 10px;
+  padding-left: 5px;
+  background-color: #f1f1f1;
+  padding-top: 15px;
+  border-color: antiquewhite;
+  width: 45%;
+  /* width: calc(50% - 29px); */
+}
+
+/* .circle {
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-left: 30px;
+} */
+
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.scoreHome {
+  font-size: 24px;
+}
+
+.degree {
+  color: darkgoldenrod;
+}
+
+.blackDiv {
+  color: black;
+}
+.blueDiv {
+  color: blueviolet;
+}
+
+.clock,
+.refr {
+  color: darkgray;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-bottom-style: solid;
+  border-bottom-color: darkgray;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.head h1:after {
+  content: "";
+  width: 20px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #f1f1f1;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.imglogo {
+  vertical-align: baseline;
+}
+
+.img1text {
+  word-break: break-word;
+}
+
+.root {
+  position: fixed;
+  bottom: 0;
+  z-index: 200;
+  background-color: lightgray;
+  padding: 10px 80px;
+  color: white;
+  width: 100%;
+}
+
+.containerrr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cards {
+    width: 100%;
+    margin-left: 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .filtercontainer {
+    width: 100%;
+  }
+  #card_main {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buttons,
+  .head {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #card_main {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buttons,
+  .head {
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: space-around;
+  }
+  .cards {
+    width: 100%;
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .buttons,
+  .head {
+    margin-left: 35%;
+    margin-right: 35%;
+    justify-content: space-around;
+  }
+  .cards {
+    width: 100%;
+    margin-left: 20px;
+  }
+  #card_main {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    width: 10%;
+  }
+}
